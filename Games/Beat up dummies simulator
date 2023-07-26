@@ -1,0 +1,463 @@
+--Open Source enjoy
+
+local ScreenGui = Instance.new("ScreenGui")
+local Title = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Content = Instance.new("Frame")
+local PageFrame = Instance.new("Frame")
+local Section = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local Button = Instance.new("TextButton")
+local Infinitejump = Instance.new("TextButton")
+local autoparry = Instance.new("TextButton")
+local autokick = Instance.new("TextButton")
+local superhuman = Instance.new("TextButton")
+local autoblows = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Title.Name = "Title"
+Title.Parent = ScreenGui
+Title.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Title.BorderColor3 = Color3.fromRGB(50, 50, 50)
+Title.Position = UDim2.new(0.363004118, 0, 0.313026309, 0)
+Title.Size = UDim2.new(0, 525, 0, 28)
+
+TextLabel.Parent = Title
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-0.000784311444, 0, 0.0357142873, 0)
+TextLabel.Size = UDim2.new(0, 184, 0, 27)
+TextLabel.Font = Enum.Font.SourceSansLight
+TextLabel.Text = "Beat Up Dummies Simulator"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Content.Name = "Content"
+Content.Parent = Title
+Content.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+Content.BorderColor3 = Color3.fromRGB(50, 50, 50)
+Content.Position = UDim2.new(0, 0, 0.999998927, 0)
+Content.Size = UDim2.new(1, 0, 0, 291)
+
+PageFrame.Name = "PageFrame"
+PageFrame.Parent = Content
+PageFrame.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+PageFrame.BackgroundTransparency = 1.000
+PageFrame.Position = UDim2.new(0.259047627, 0, 0, 0)
+PageFrame.Size = UDim2.new(0.74000001, 0, 1, 0)
+PageFrame.Visible = false
+
+Section.Name = "Section"
+Section.Parent = PageFrame
+Section.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Section.BackgroundTransparency = 1.000
+Section.Position = UDim2.new(0.0334620327, 0, 0, 0)
+Section.Size = UDim2.new(0.951093972, 0, -0.140893474, 100)
+
+UIListLayout.Parent = Section
+UIListLayout.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+UIListLayout.Padding = UDim.new(0, 15)
+
+Button.Name = "Button"
+Button.Parent = Section
+Button.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Button.BorderColor3 = Color3.fromRGB(60, 60, 60)
+Button.Size = UDim2.new(0, 104, 0, 33)
+Button.Font = Enum.Font.SourceSansLight
+Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button.TextSize = 20.000
+
+Infinitejump.Name = "Infinitejump"
+Infinitejump.Parent = Content
+Infinitejump.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Infinitejump.BorderColor3 = Color3.fromRGB(60, 60, 60)
+Infinitejump.Position = UDim2.new(0.0748137906, 0, 0.0412371159, 0)
+Infinitejump.Size = UDim2.new(0, 104, 0, 33)
+Infinitejump.Font = Enum.Font.SourceSansLight
+Infinitejump.Text = "Infinite Jump : OFF"
+Infinitejump.TextColor3 = Color3.fromRGB(255, 255, 255)
+Infinitejump.TextScaled = true
+Infinitejump.TextSize = 20.000
+Infinitejump.TextWrapped = true
+
+autoparry.Name = "autoparry"
+autoparry.Parent = Content
+autoparry.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+autoparry.BorderColor3 = Color3.fromRGB(60, 60, 60)
+autoparry.Position = UDim2.new(0.28844887, 0, 0.0412371159, 0)
+autoparry.Size = UDim2.new(0, 104, 0, 33)
+autoparry.Font = Enum.Font.SourceSansLight
+autoparry.Text = "AutoParry: OFF"
+autoparry.TextColor3 = Color3.fromRGB(255, 255, 255)
+autoparry.TextScaled = true
+autoparry.TextSize = 20.000
+autoparry.TextWrapped = true
+
+autokick.Name = "autokick"
+autokick.Parent = Content
+autokick.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+autokick.BorderColor3 = Color3.fromRGB(60, 60, 60)
+autokick.Position = UDim2.new(0.507722795, 0, 0.0412371159, 0)
+autokick.Size = UDim2.new(0, 104, 0, 33)
+autokick.Font = Enum.Font.SourceSansLight
+autokick.Text = "AutoKick: OFF"
+autokick.TextColor3 = Color3.fromRGB(255, 255, 255)
+autokick.TextScaled = true
+autokick.TextSize = 20.000
+autokick.TextWrapped = true
+
+superhuman.Name = "superhuman"
+superhuman.Parent = Content
+superhuman.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+superhuman.BorderColor3 = Color3.fromRGB(60, 60, 60)
+superhuman.Position = UDim2.new(0.727600217, 0, 0.0412371159, 0)
+superhuman.Size = UDim2.new(0, 104, 0, 33)
+superhuman.Font = Enum.Font.SourceSansLight
+superhuman.Text = "SuperHuman: OFF"
+superhuman.TextColor3 = Color3.fromRGB(255, 255, 255)
+superhuman.TextScaled = true
+superhuman.TextSize = 20.000
+superhuman.TextWrapped = true
+
+autoblows.Name = "autoblows"
+autoblows.Parent = Content
+autoblows.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+autoblows.BorderColor3 = Color3.fromRGB(60, 60, 60)
+autoblows.Position = UDim2.new(0.0748137906, 0, 0.185567006, 0)
+autoblows.Size = UDim2.new(0, 104, 0, 33)
+autoblows.Font = Enum.Font.SourceSansLight
+autoblows.Text = "Autoblows: OFF"
+autoblows.TextColor3 = Color3.fromRGB(255, 255, 255)
+autoblows.TextScaled = true
+autoblows.TextSize = 20.000
+autoblows.TextWrapped = true
+
+TextButton.Parent = Title
+TextButton.BackgroundColor3 = Color3.fromRGB(150, 0, 0)
+TextButton.Position = UDim2.new(1.0057143, -30, 0.5, -10)
+TextButton.Size = UDim2.new(0, 20, 0, 20)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+-- Scripts:
+
+local function QCNORM_fake_script() -- Infinitejump.LocalScript 
+	local script = Instance.new('LocalScript', Infinitejump)
+
+	local button = script.Parent
+	local UserInputService = game:GetService("UserInputService")
+	local player = game.Players.LocalPlayer
+	
+	local infJumpDebounce = false
+	local infJump = nil
+	local infJumpEnabled = false
+	
+	local function enableInfiniteJump()
+		infJump = UserInputService.JumpRequest:Connect(function()
+			if not infJumpDebounce then
+				infJumpDebounce = true
+				player.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+				wait()
+				infJumpDebounce = false
+			end
+		end)
+	end
+	
+	local function disableInfiniteJump()
+		if infJump then
+			infJump:Disconnect()
+			infJump = nil
+		end
+	end
+	
+	local function toggleInfiniteJump()
+		infJumpEnabled = not infJumpEnabled
+		if infJumpEnabled then
+			enableInfiniteJump()
+		else
+			disableInfiniteJump()
+		end
+	
+		button.Text = infJumpEnabled and "Infinite Jump: ON" or "Infinite Jump: OFF"
+	end
+	
+	button.MouseButton1Click:Connect(toggleInfiniteJump)
+	
+	-- Set the initial appearance of the button and infinite jump status
+	disableInfiniteJump()
+	button.Text = "Infinite Jump: OFF"
+	
+end
+coroutine.wrap(QCNORM_fake_script)()
+local function GOMQZI_fake_script() -- autoparry.LocalScript 
+	local script = Instance.new('LocalScript', autoparry)
+
+	local button = script.Parent
+	local UserInputService = game:GetService("UserInputService")
+	local player = game.Players.LocalPlayer
+	
+	local function enableInfiniteJump()
+		local args = {
+			[1] = game.Players.LocalPlayer.Character -- Assuming you want to use the LocalPlayer's character as the target.
+		}
+	
+		game:GetService("ReplicatedStorage"):WaitForChild("GuardUp"):FireServer(unpack(args))
+		wait(2)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+	end
+	
+	local function disableInfiniteJump()
+		local args = {
+			[1] = game.Players.LocalPlayer.Character -- Assuming you want to use the LocalPlayer's character as the target.
+		}
+	
+		game:GetService("ReplicatedStorage"):WaitForChild("GuardDown"):FireServer(unpack(args))
+		wait(2)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+	end
+	
+	local function toggleInfiniteJump()
+		infJumpEnabled = not infJumpEnabled
+		if infJumpEnabled then
+			enableInfiniteJump()
+		else
+			disableInfiniteJump()
+		end
+	
+		button.Text = infJumpEnabled and "AutoParry: ON" or "AutoParry: OFF"
+	end
+	
+	button.MouseButton1Click:Connect(toggleInfiniteJump)
+	
+	-- Set the initial appearance of the button and infinite jump status
+	disableInfiniteJump()
+	button.Text = "AutoParry: OFF"
+	
+end
+coroutine.wrap(GOMQZI_fake_script)()
+local function EGCP_fake_script() -- autokick.LocalScript 
+	local script = Instance.new('LocalScript', autokick)
+
+	local button = script.Parent
+	local UserInputService = game:GetService("UserInputService")
+	local player = game.Players.LocalPlayer
+	
+	local autokickEnabled = false -- Initialize autokickEnabled to false
+	local autokickLoop
+	
+	local function enableautokickLoop()
+		while autokickEnabled do
+			local args = {
+				[1] = game:GetService("Players").LocalPlayer
+			}
+			game:GetService("ReplicatedStorage"):WaitForChild("Kick"):FireServer(unpack(args))
+			wait(0.1) -- Wait for 1 second before trying to kick again
+		end
+	end
+	
+	local function disableautokickLoop()
+		autokickEnabled = false
+	end
+	
+	local function toggleautokick()
+		autokickEnabled = not autokickEnabled
+		if autokickEnabled then
+			autokickLoop = coroutine.create(enableautokickLoop)
+			coroutine.resume(autokickLoop) -- Start the loop when autokick is enabled
+		else
+			disableautokickLoop() -- Stop the loop when autokick is disabled
+		end
+	
+		button.Text = autokickEnabled and "AutoKick: ON" or "AutoKick: OFF"
+	end
+	
+	button.MouseButton1Click:Connect(toggleautokick)
+	
+	-- Set the initial appearance of the button and autokick status
+	disableautokickLoop()
+	button.Text = "AutoKick: OFF"
+	
+end
+coroutine.wrap(EGCP_fake_script)()
+local function XPADRWL_fake_script() -- superhuman.LocalScript 
+	local script = Instance.new('LocalScript', superhuman)
+
+	local button = script.Parent
+	local UserInputService = game:GetService("UserInputService")
+	local player = game.Players.LocalPlayer
+	
+	local function enableInfiniteJump()
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
+	end
+	
+	local function disableInfiniteJump()
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+	end
+	
+	local function toggleInfiniteJump()
+		infJumpEnabled = not infJumpEnabled
+		if infJumpEnabled then
+			enableInfiniteJump()
+		else
+			disableInfiniteJump()
+		end
+	
+		button.Text = infJumpEnabled and "SuperHuman: ON" or "SuperHuman: OFF"
+	end
+	
+	button.MouseButton1Click:Connect(toggleInfiniteJump)
+	
+	-- Set the initial appearance of the button and infinite jump status
+	disableInfiniteJump()
+	button.Text = "SuperHuman: OFF"
+	
+end
+coroutine.wrap(XPADRWL_fake_script)()
+local function DYJUCC_fake_script() -- autoblows.LocalScript 
+	local script = Instance.new('LocalScript', autoblows)
+
+	local button = script.Parent
+	local UserInputService = game:GetService("UserInputService")
+	local player = game.Players.LocalPlayer
+	
+	local autokickEnabled = false -- Initialize autokickEnabled to false
+	local autokickLoop
+	
+	local function enableautokickLoop()
+		while autokickEnabled do
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1.4928687810897827, 146.199951171875, 69.6212158203125)
+			local args = {
+				[1] = game:GetService("Players").LocalPlayer
+			}
+			game:GetService("ReplicatedStorage"):WaitForChild("Kick"):FireServer(unpack(args))
+			wait(0.1) -- Wait for 1 second before trying to kick again
+		end
+	end
+	
+	local function disableautokickLoop()
+		autokickEnabled = false
+	end
+	
+	local function toggleautokick()
+		autokickEnabled = not autokickEnabled
+		if autokickEnabled then
+			autokickLoop = coroutine.create(enableautokickLoop)
+			coroutine.resume(autokickLoop) -- Start the loop when autokick is enabled
+		else
+			disableautokickLoop() -- Stop the loop when autokick is disabled
+		end
+	
+		button.Text = autokickEnabled and "Autoblows: ON" or "Autoblows: OFF"
+	end
+	
+	button.MouseButton1Click:Connect(toggleautokick)
+	
+	-- Set the initial appearance of the button and autokick status
+	disableautokickLoop()
+	button.Text = "Autoblows: OFF"
+	
+end
+coroutine.wrap(DYJUCC_fake_script)()
+local function QTJWEAJ_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local ContentFrame = script.Parent.Parent:WaitForChild("Content")
+	local ToggleBtn = script.Parent
+	
+	-- Get TextButtons inside the ContentFrame
+	local TextButtons = ContentFrame:GetChildren()
+	
+	-- Initial state
+	local isContentVisible = true
+	ContentFrame.BackgroundColor3 = Color3.new(32/255, 32/255, 32/255)
+	
+	-- Function to smoothly change the frame's visibility and button color
+	local function toggleContentVisibility()
+		isContentVisible = not isContentVisible
+		if isContentVisible then
+			ContentFrame:TweenSize(UDim2.new(1, 0, 0, 291), Enum.EasingDirection.Out, Enum.EasingStyle.Linear, 0.5, true)
+			wait(0.5) -- Add a delay to prevent abrupt changes
+			for _, btn in ipairs(TextButtons) do
+				if btn:IsA("TextButton") then
+					btn.Visible = true
+				end
+			end
+		else
+			ContentFrame:TweenSize(UDim2.new(1, 0, 0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Linear, 0.5, true)
+			wait(0.5) -- Add a delay to prevent abrupt changes
+			for _, btn in ipairs(TextButtons) do
+				if btn:IsA("TextButton") then
+					btn.Visible = false
+				end
+			end
+		end
+		ToggleBtn.BackgroundColor3 = isContentVisible and Color3.new(1, 0, 0) or Color3.new(0, 1, 0)
+	end
+	
+	-- Bind the toggleContentVisibility function to the button's Click event
+	ToggleBtn.MouseButton1Click:Connect(toggleContentVisibility)
+	
+end
+coroutine.wrap(QTJWEAJ_fake_script)()
+local function BKGDE_fake_script() -- Title.LocalScript 
+	local script = Instance.new('LocalScript', Title)
+
+	local frame = script.Parent
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		frame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	local function onInputBegan(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = frame.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end
+	
+	local function onInputChanged(input)
+		if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+			dragInput = input
+			update(input)
+		end
+	end
+	
+	frame.InputBegan:Connect(onInputBegan)
+	frame.InputChanged:Connect(onInputChanged)
+	
+	game:GetService("UserInputService").InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+	
+end
+coroutine.wrap(BKGDE_fake_script)()
